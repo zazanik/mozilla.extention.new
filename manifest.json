@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "F5 Add Bar Extension",
+  "version": "0.2.1",
+  "description": "F5 Firefox extension",
+
+  "content_scripts": [{
+    "css": ["css/main.css"],
+    "js": ["js/jquery-3.1.1.min.js", "js/main.js"],
+    "matches": ["<all_urls>"]
+  }],
+
+  "web_accessible_resources": ["img/*.png"]
+
+}
